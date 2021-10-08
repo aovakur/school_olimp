@@ -1,0 +1,121 @@
+﻿{% extends "layout.html" %}
+{% block content %}
+<h2 class="form-signin-heading">Регистрация для родителей/гостей</h2>
+</br>
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <form name="my-form" action="/auth/reg_success" method="POST">
+                                <div class="form-group row">
+                                    <label for="familia" class="col-md-4 col-form-label text-md-right">Фамилия</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="familia" class="form-control" name="familia">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">Имя</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="name" class="form-control" name="name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="otchestvo" class="col-md-4 col-form-label text-md-right">Отчество</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="otchestvo" class="form-control" name="otchestvo">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="mob" class="col-md-4 col-form-label text-md-right">Телефон</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="mob" class="form-control" name="mob">
+                                    </div>
+                                </div>
+
+                               
+
+                                 <div class="form-group row">
+                                    <label for="mail" class="col-md-4 col-form-label text-md-right">Почта</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="mail" class="form-control" name="mail">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="org" class="col-md-4 col-form-label text-md-right">Организация</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="org" class="form-control" name="org">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+
+                                    <label for="password" class="col-md-4 col-form-label text-md-right">Пароль</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="password" class="form-control" name="password">
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="btn btn-success" onclick="EnableElement()">Добавить ребенка</button>
+                                <button type="button" class="btn btn-warning" onclick="DeleteElement()">Удалить ребенка</button>
+                               
+                                <div class="child">
+                                </div>
+                                
+                                <div class="endchild">
+                                <div class="form-group row">
+                                    <label for="countchild" class="col-md-4 col-form-label text-md-right">Количество детей</label>
+                                    <div class="col-md-6">
+                                        <input readonly="readonly" type="text" id="countchild" class="form-control" name="countchild">
+                                    </div>
+                                </div>
+                                </div>
+
+                                <script>
+                                let countchild  = 0 
+                                UpdateCount ();
+
+                                function EnableElement() {  
+                                    var article = document.querySelector("div.child");
+                                    var name_1 = document.createElement("div");
+                                    countchild ++;
+                                    name_1.className ='child_'+ countchild;
+                                    name_1.innerHTML ='<div class="form-group row"><label for="child_name" class="col-md-4 col-form-label text-md-right">Имя ребенка</label><div class="col-md-6"><input type="text" id="child_name" class="form-control" name="child_name' + countchild + '"></div></div><div class="form-group row"><label for="child_fam" class="col-md-4 col-form-label text-md-right">Фамилия ребенка</label><div class="col-md-6"><input type="text" id="child_fam" class="form-control" name="child_fam' + countchild + '"></div></div><div class="form-group row"><label for="child_otchestvo" class="col-md-4 col-form-label text-md-right">Отчество ребенка</label><div class="col-md-6"><input type="text" id="child_otchestvo" class="form-control" name="child_otchestvo' + countchild + '"></div></div><div class="form-group row"><label for="child_bith" class="col-md-4 col-form-label text-md-right">День рождения ребенка</label><div class="col-md-6"><input type="text" id="child_bith" class="form-control" name="child_bith' + countchild + '"></div></div><div class="end"></div>';
+                                    article.appendChild(name_1);
+                                    UpdateCount ();
+                                    
+                                }
+
+                                function DeleteElement (){
+                                    document.querySelector('.child_'+ countchild).remove()
+                                    countchild--;
+                                    UpdateCount ();
+
+                                }
+
+                                function UpdateCount (){
+                                    let inp = document.querySelector("#countchild");
+                                    inp.value = countchild;
+                                    inp.dispatchEvent(new Event('change',{bubbles:true}));
+                                }
+
+                                </script>
+                                       <button class="btn btn-lg btn-primary btn-block" type="submit">Отправить заявку</button>
+                                    
+                                </div>
+
+                                
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,7 @@
+Flask~=1.1
+pymysql
+Flask-Login
+Flask-Admin
+Flask-WTF
+email_validator
+Flask-Security

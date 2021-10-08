@@ -1,0 +1,30 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="main">
+	<div class="row">
+            <div class="col-md-4 ms-auto col-3 bg-light p-3 border">
+            	<div class="profile">
+            	<div class="picturebox">
+            		<img src="https://img1.fonwall.ru/o/yb/angry-birds-birds-movies-animated-movies-swsr.jpeg?route=mid&h=750" alt="..." class="img-thumbnail" width="250px" height="300px">
+            	</div>
+            	    
+                    <h4>Учетный номер: <b>{{session['id']}}</b><h4>
+			        <h4>Имя: <b>{{session['name']}}</b><h4>
+                    <h4>Фамилия: <b>{{session['familia']}}</b><h4>
+					<h4>Отчество: <b>{{session['otchestvo']}}</b><h4>
+					<h4>Моб: <b>{{session['mob']}}</b><h4>
+                    <h4>почта: <b>{{session['mail']}}</b><h4>
+                    <h4>Дети: <b>{{session['child']}}</b><h4>
+                    <h4>Организация: <b>{{session['org']}}</b><h4>
+                    <h4>Чек: <b>{{session['check_rule']}}</b><h4>
+                    <h4>Роль: <b>{{session['rule']}}</b><h4>
+			</div>
+			</div>
+
+             <div class="col-md-4 ms-auto col-sm-9 bg-light p-3 border">88989889</div>
+    </div>
+</div>
+
+{% endblock %}

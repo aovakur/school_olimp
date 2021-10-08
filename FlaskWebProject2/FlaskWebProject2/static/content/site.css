@@ -1,0 +1,91 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select{
+    max-width: 280px;
+}
+
+textarea {
+    max-width: 1900px;
+}
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.main{
+                background-color: #eee;
+                height: 100%;
+                background-position: left bottom;
+                background-repeat: repeat-x;
+            }
+
+.picturebox
+{
+    margin-top: 5px;
+}
+
+.profile
+{
+    margin-left: 5px;
+}
+
+.child {
+
+    padding-top: 10px;
+}
+
+.end {
+    border-bottom: 3px solid #f0ad4e; 
+    margin-bottom: 10px; 
+}
+
+.endchild {
+    padding-top: 10px;
+}
+
+.pagination-page-info {
+    padding: .6em;
+    padding-left: 0;
+    width: 40em;
+    margin: .5em;
+    margin-left: 0;
+    font-size: 12px;
+}
+.pagination-page-info b {
+    color: black;
+    background: #6aa6ed;
+    padding-left: 2px;
+    padding: .1em .25em;
+    font-size: 150%;
+}

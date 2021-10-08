@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>00351ff9-4540-4f7f-b63a-003be4abcf9c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>FlaskWebProject2</Name>
+    <RootNamespace>FlaskWebProject2</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FlaskWebProject2\templates\auth\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runserver.py" />
+    <Compile Include="FlaskWebProject2\__init__.py" />
+    <Compile Include="FlaskWebProject2\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FlaskWebProject2\" />
+    <Folder Include="FlaskWebProject2\static\" />
+    <Folder Include="FlaskWebProject2\static\content\" />
+    <Folder Include="FlaskWebProject2\static\fonts\" />
+    <Folder Include="FlaskWebProject2\static\scripts\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\icons\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\icons\default\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\langs\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\advlist\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\anchor\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\autolink\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\autoresize\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\autosave\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\bbcode\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\charmap\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\codesample\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\code\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\colorpicker\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\contextmenu\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\directionality\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\emoticons\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\emoticons\js\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\fullpage\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\fullscreen\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\help\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\hr\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\imagetools\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\image\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\importcss\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\insertdatetime\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\legacyoutput\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\link\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\lists\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\media\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\nonbreaking\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\noneditable\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\pagebreak\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\paste\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\preview\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\print\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\quickbars\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\save\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\searchreplace\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\spellchecker\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\tabfocus\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\table\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\template\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\textcolor\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\textpattern\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\toc\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\visualblocks\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\visualchars\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\plugins\wordcount\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\content\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\content\dark\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\content\default\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\content\document\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\content\writer\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide-dark\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide-dark\fonts\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide\fonts\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\themes\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\themes\mobile\" />
+    <Folder Include="FlaskWebProject2\static\scripts\tinymce\themes\silver\" />
+    <Folder Include="FlaskWebProject2\templates\" />
+    <Folder Include="FlaskWebProject2\templates\auth\" />
+    <Folder Include="FlaskWebProject2\templates\article\" />
+    <Folder Include="FlaskWebProject2\templates\sportsmen\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\icons\default\icons.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\jquery.tinymce.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\langs\README.md" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\license.txt" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\emoticons\js\emojiimages.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\emoticons\js\emojiimages.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\emoticons\js\emojis.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\emoticons\js\emojis.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\help\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\quickbars\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\toc\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\content\dark\content.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\content\default\content.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\content\document\content.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\content\writer\content.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide-dark\content.inline.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide-dark\content.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide-dark\content.mobile.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide-dark\fonts\tinymce-mobile.woff" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide-dark\skin.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide-dark\skin.mobile.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide-dark\skin.shadowdom.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide\content.inline.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide\content.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide\content.mobile.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide\fonts\tinymce-mobile.woff" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide\skin.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide\skin.mobile.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\skins\ui\oxide\skin.shadowdom.min.css" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\themes\mobile\theme.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\themes\silver\theme.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\tinymce.d.ts" />
+    <Content Include="FlaskWebProject2\static\scripts\tinymce\tinymce.min.js" />
+    <Content Include="FlaskWebProject2\templates\activity.html" />
+    <Content Include="FlaskWebProject2\templates\article\edit_page.html" />
+    <Content Include="FlaskWebProject2\templates\article\layout.html" />
+    <Content Include="FlaskWebProject2\templates\article\success1.html" />
+    <Content Include="FlaskWebProject2\templates\sportsmen\authority.html" />
+    <Content Include="FlaskWebProject2\templates\auth\login.html" />
+    <Content Include="FlaskWebProject2\templates\auth\register.html" />
+    <Content Include="FlaskWebProject2\templates\sportsmen\dashboard.html" />
+    <Content Include="FlaskWebProject2\templates\sportsmen\Index_sportsmen.html" />
+    <Content Include="FlaskWebProject2\templates\sportsmen\layout.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="FlaskWebProject2\static\content\bootstrap.css" />
+    <Content Include="FlaskWebProject2\static\content\bootstrap.min.css" />
+    <Content Include="FlaskWebProject2\static\content\site.css" />
+    <Content Include="FlaskWebProject2\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="FlaskWebProject2\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FlaskWebProject2\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="FlaskWebProject2\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="FlaskWebProject2\static\scripts\bootstrap.js" />
+    <Content Include="FlaskWebProject2\static\scripts\bootstrap.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="FlaskWebProject2\static\scripts\jquery-1.10.2.js" />
+    <Content Include="FlaskWebProject2\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="FlaskWebProject2\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="FlaskWebProject2\static\scripts\jquery.validate.js" />
+    <Content Include="FlaskWebProject2\static\scripts\jquery.validate.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="FlaskWebProject2\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="FlaskWebProject2\static\scripts\respond.js" />
+    <Content Include="FlaskWebProject2\static\scripts\respond.min.js" />
+    <Content Include="FlaskWebProject2\static\scripts\_references.js" />
+    <Content Include="FlaskWebProject2\templates\about.html" />
+    <Content Include="FlaskWebProject2\templates\contact.html" />
+    <Page Include="FlaskWebProject2\templates\index.html" />
+    <Content Include="FlaskWebProject2\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

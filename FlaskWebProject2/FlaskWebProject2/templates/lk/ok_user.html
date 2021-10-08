@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<br/>
+{% if msg %}
+        <h4>{{ msg }}</h4>
+            {% endif %}
+
+{% if data %}			
+<h1>Список пользователей для подтверждения </h1>
+<table class="table-secondary">
+	<thead>
+    <tr>
+      <th>Имя</th>
+      <th>Фамилия</th>
+      <th>Отчество</th>
+      <th>Мобильный</th>
+      <th>Почта</th>
+      <th>Есть дети</th>
+      <th>Организация</th>
+      <th>Пароль</th>
+      <th>Роль</th>
+    </tr>
+  </thead>
+
+
+{% for p in data %}
+<p></p>
+
+<tbody>
+    <tr>
+      <td>{{p[1]}}</td>
+      <td>{{p[2]}}</td>
+      <td>{{p[3]}}</td>
+      <td>{{p[4]}}</td>
+      <td>{{p[5]}}</td>
+      <td>{{p[6]}}</td>
+      <td>{{p[7]}}</td>
+      <td>{{p[8]}}</td>
+      <td>{{p[10]}}</td>
+	  <td><a href="/lk/userok?ok={{p[0]}}">Подтвердить</a></td>
+     <td><a href="/lk/edit_user?edit={{p[0]}}">Просмотр профиля</a></td>
+     <td><a href="/lk/edit_user?block={{p[0]}}">Заблокировать</a></td>
+    
+    </tr>
+  </tbody>
+
+{% endfor %}
+{% endif %}
+</table>
+{% endblock %}
